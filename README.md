@@ -22,6 +22,8 @@ _There is an example nodejs express app you can use in the `./app` directory._
 $ docker build -t {aws_account}.dkr.ecr.{aws_region}.amazonaws.com/{repo_name}:vX.Y.Z .
 ```
 
+> if you have to build for different architecture, you can add for example `--platform=linux/amd64`
+
 Where `{repo_name}` is the name of the ECR repository that already exists in your AWS account.
 
 Where `vX.Y.Z` is the version of the build.
